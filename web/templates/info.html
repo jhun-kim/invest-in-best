@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>INVEST IN BEST</title>
+
+    <!-- Custom fonts for this template-->
+    <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
+
+    <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+    
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <!-- <link href="css/sb-admin-2.min.css" rel="stylesheet"> -->
+
+    <link href="{{ url_for('static', filename='css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <!-- <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet"> -->
+
+    <link href="{{ url_for('static', filename='vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
+
+    <!-- math tool -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({            
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">INVEST IN BEST</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="/info">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Information</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                포트폴리오
+            </div>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/chart">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Roly-Poly 모델</span></a>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/capm">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>CAPM 모델</span></a>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/fac5">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Black–Litterman 모델</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+        
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h1 mb-3 mt-3 text-center font-weight-bold text-primary">Information</h1>
+                    <hr class="Divider my-0">
+
+                    <h1 class="h1 mt-3 font-weight-bold text-primary"><모델></h1>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-6 col-lg-7 mb-2 mt-3">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-primary text-uppercase mb-1">
+                                                CAPM 모델</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">자본자산 가격결정 모형(Capital Asset Pricing Model)의 약자로 주식이나 채권 등의 자본자산들의 기대수익률과 위험과의 관계를 도출해내는 모형이다. 즉, 투자자들이 투자활동을 해서 시장이 균형상태에 있을 때, 주식이나 채권 등의 자본자산의 균형가격이 어떻게 결정되는지를 설명해주는 모형이라 할 수 있다.
+                                                </div>
+                                            <div>[네이버 지식백과] CAPM (시사경제용어사전, 2017. 11., 기획재정부)</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-7 mb-2 mt-3">
+                            <img src="https://thebook.io/img/080227/139_2.jpg" style="width: 700px; height:200px;">
+                        </div>
+
+                        <!-- Earnings (Annual) Card Example -->
+                        <div class="col-xl-6 col-lg-7 mb-3 mt-3">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-primary text-uppercase mb-1">
+                                                Black–Litterman model</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                마코위츠의 평균-분산 모델은 기대수익률과 위험을 갖고 효율적 포트폴리오를 찾는다. 그리고 윌리암 샤프는 이를 발전시켜 여기에 무위험자산을 더함으로써 자본자산가격결정모델(CAPM)을 완성했다. 블랙-리터만 모델은 균형기대수익률과 투자자 전망을 결합해 계산한 기대수익률을 평균-분산 모델의 모수로 활용해 최적 포트폴리오를 구성한다.    
+                                            </div>
+                                            <div>[파이썬으로 배우는 포트폴리오] 블랙-리터만 모델</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-7 mb-3 mt-3">
+                            <figure>
+                                <img src="https://thebook.io/img/080227/190.jpg" style="width: 700px; height:200px;">
+                                <figcaption>시장에 내재된 균형기대수익률(Π)과 투자 전망에 의한 수익률(V)</figcaption>
+                            </figure>
+                        </div>
+                    
+                    </div>
+
+
+                    <hr class="Divider my-0">
+
+                    <h1 class="h1 mt-3 font-weight-bold text-primary"><세부정보></h1>
+
+
+                    <div class="row">
+
+                        <!-- Earnings (Annual) Card Example -->
+                        <div class="offset-xl-3 col-xl-6 col-lg-7 mb-2 mt-3">
+                            <div class="card border-left-danger shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-danger text-uppercase mb-1">
+                                                주의 사항
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                1. PER, PBR이 낮다고 해서 모두 저평가됐다고 판단할 수는 없다.
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                2. 실적에 반영되지 않는 회사의 경쟁력, 산업의 변화, 업종의 특성 등을 고려해야한다.
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-6 col-lg-7 mb-2 mt-3">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-primary text-uppercase mb-1">
+                                                EPS(주당순이익)
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                EPS란 기업이 벌어들인 순이익(당기순이익)을 그 기업이 발행한 총 주식수로 나눈 값으로, '주당순이익'을 말한다.
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                - 주당순이익(EPS)은 기업이 벌어들인 순이익(당기순이익)을 그 기업이 발행한 총 주식수로 나눈 값으로, 1주당 이익을 얼마나 창출하였느냐를 나타내는 지표이다. 즉 해당 회사가 1년간 올린 수익에 대한 주주의 몫을 나타내는 지표라 할 수 있다. 또한 주당순이익은 주가수익비율(PER)계산의 기초가 되기도 한다.
+                                            </div>
+                                            <div>[네이버 지식백과] 주당순이익(EPS) (시사상식사전, pmg 지식엔진연구소)</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-6 col-lg-7 mb-2 mt-3">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-primary text-uppercase mb-1">
+                                                PER
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                $ PER= \frac{시가총액}{당기순이익}\ = \frac{주가}{주당순이익(EPS)}\ $
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                1. 기업이 벌어들이는 이익에 비해 주가가 어느 정도인지 가늠하는 지표.
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                2. PER 낮으면 기업의 이익에 비해 주가가 저평가됐다고 판단할 수 있다.
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-6 col-lg-7 mb-2">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-warning text-uppercase mb-1">
+                                                BPS(주당순자산가치)
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                BPS(주당순자산가치)란 기업의 총자산에서 부채를 빼면 기업의 순자산이 남는데, 이 순자산을 발행주식수로 나눈 수치를 말한다.
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                - 기업의 총자산에서 부채를 빼면 기업의 순자산이 남는데, 이 순자산을 발행주식수로 나눈 수치를 말한다. 기업이 활동을 중단한 뒤 그 자산을 모든 주주들에게 나눠줄 경우 1주당 얼마씩 배분되는가를 나타내는 것으로, BPS가 높을수록 수익성 및 재무건전성이 높아 투자가치가 높은 기업이라 할 수 있다.                                              
+                                            </div>
+                                            <div>[네이버 지식백과] 주당 순자산가치(BPS) (시사상식사전, pmg 지식엔진연구소)</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-6 col-lg-7 mb-2">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-warning text-uppercase mb-1">
+                                                PBR
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                $ PBR = \frac{시가총액}{자본}\ = \frac{주가}{주당순자산(BPS)}$
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                1. 주식 1주당 어느정도의 자산을 가지고 있는지 가늠하는 지표.
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                2. PBR 은 1을 기준으로 1배 이하면 청산가치보다 주식이 저평가되어 있다고 볼 수 있다.
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-6 col-lg-7 mb-2">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-success text-uppercase mb-1">
+                                                Sharpe ratio(샤프지수)
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                Sharpe ratio란 표준편차를 이용하여 펀드의 성과를 평가하는 지표이다.
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                - 특정 펀드가 한 단위의 위험자산에 투자해서 얻은 초과수익의 정도를 나타내는 지표이다. 샤프척도(Sharpe measure)라고도 하며, 트레이너지수(Treynor ratio)·젠센지수(Jensen's ratio)와 함께 위험을 감안하여 펀드를 측정하는 방법으로, 두 지수와 더불어 위험조정 후 수익률지수로 통칭된다.
+                                            </div>
+                                            <div>[네이버 지식백과] 샤프지수 [Sharpe ratio] (두산백과 두피디아, 두산백과)</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-6 col-lg-7 mb-2">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h1 font-weight-bold text-success text-uppercase mb-1">
+                                                Maximum Draw Down
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                MDD란 최대하락비율을 뜻하는 지표이다.
+                                            </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                - 특정 종목이 기간내에 최고점 대비 몇 % 하락하여 내려갔는지를 나타내는 지표로써, 즉정 기간 동안 주가의 최고점과 최저점의 값을 비율로 계산한 것이라 할 수 있다.
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+
+                    
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; INVEST IN BEST</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Bootstrap core JavaScript-->
+    <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}" > </script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}" > </script>
+
+    <!-- Core plugin JavaScript-->
+    <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+
+    <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}" > </script>
+
+    <!-- Custom scripts for all pages-->
+    <!-- <script src="js/sb-admin-2.min.js"></script> -->
+
+    <script src="{{ url_for('static', filename='js/sb-admin-2.min.js') }}" > </script>
+
+    <!-- Page level plugins -->
+    <!-- <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script> -->
+
+    <script src="{{ url_for('static', filename='vendor/chart.js/Chart.min.js') }}" > </script>
+    <script src="{{ url_for('static', filename='vendor/datatables/jquery.dataTables.min.js') }}" > </script>
+    <script src="{{ url_for('static', filename='vendor/datatables/dataTables.bootstrap4.min.js') }}" > </script>
+
+    <!-- Page level custom scripts -->
+    <!-- <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
+    <script src="js/demo/datatables-demo.js"></script> -->
+
+    <script src="{{ url_for('static', filename='js/demo/chart-area-demo.js') }}" > </script>
+    <script src="{{ url_for('static', filename='js/demo/chart-pie-demo.js') }}" > </script>
+    <script src="{{ url_for('static', filename='js/demo/chart-bar-demo.js') }}" > </script>
+    <script src="{{ url_for('static', filename='js/demo/datatables-demo.js') }}" > </script>
+
+</body>
+
+</html>
